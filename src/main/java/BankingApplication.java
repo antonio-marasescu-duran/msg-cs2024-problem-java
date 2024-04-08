@@ -28,7 +28,7 @@ public class BankingApplication {
         TransactionModel transaction1 = transactionManagerServiceInstance.transfer(
                 checkingAccountA.getId(),
                 checkingAccountB.getId(),
-                new MoneyModel(50, CurrencyType.RON)
+                new MoneyModel(50, CurrencyType.USD)
         );
 
         System.out.println("[Transaction Manager] 3. " + transaction1);
